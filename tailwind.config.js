@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       spacing: {
-        10: "4.5rem",
+        18: "4.5rem",
+      },
+      fontFamily: {
+        sans: ["Gilroy", "sans-serif"],
       },
       colors: {
         blue: { 600: "#006FF9" },
