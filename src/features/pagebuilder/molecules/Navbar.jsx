@@ -1,10 +1,12 @@
 import { IconBxsChevronLeft, IconEye } from "@/icons";
 import RightMenu from "./RightMenu";
+import Content from "./Content";
+import BlockElements from "./BlockElements";
 
 const Navbar = () => {
   return (
     <>
-      <div className="h-screen flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col">
         <header className="flex h-18 items-center justify-center border-b border-gray-200 bg-white gap-x-3">
           <button className="flex items-center justify-center rounded-xl bg-gray-100 p-2">
             <IconBxsChevronLeft className="h-6 w-6 stroke-current text-gray-400" />
@@ -14,6 +16,11 @@ const Navbar = () => {
             <span className="text-sm font-semibold leading-6">Preview</span>
           </button>
         </header>
+
+        <div className="flex">
+          <BlockElements />
+          <Content />
+        </div>
       </div>
       <RightMenu />
     </>
