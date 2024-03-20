@@ -21,7 +21,7 @@ const Navbar = () => {
 
         <DndContext>
           <div className="flex">
-            <BlockElements />
+            {/* <BlockElements /> */}
             <Content />
           </div>
           <DragOverlayWrapper />

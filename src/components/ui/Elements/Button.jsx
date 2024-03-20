@@ -2,7 +2,7 @@ import { IconRectangleHorizontal } from "@/icons";
 import { cn } from "@/utils";
 import { useDraggable } from "@dnd-kit/core";
 
-const Button = ({ label }) => {
+export const Button = ({ label }) => {
   const draggable = useDraggable({
     id: "draggable-btn",
     data: {
@@ -26,5 +26,3 @@ const Button = ({ label }) => {
     </Button>
   );
 };
-
-export default Button;
