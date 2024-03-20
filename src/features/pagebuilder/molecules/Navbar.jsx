@@ -1,7 +1,9 @@
 import { IconBxsChevronLeft, IconEye } from "@/icons";
+import { DndContext } from "@dnd-kit/core";
 import RightMenu from "./RightMenu";
 import Content from "./Content";
 import BlockElements from "./BlockElements";
+import { DragOverlayWrapper } from "@/components";
 
 const Navbar = () => {
   return (
@@ -17,10 +19,13 @@ const Navbar = () => {
           </button>
         </header>
 
-        <div className="flex">
-          <BlockElements />
-          <Content />
-        </div>
+        <DndContext>
+          <div className="flex">
+            <BlockElements />
+            <Content />
+          </div>
+          <DragOverlayWrapper />
+        </DndContext>
       </div>
       <RightMenu />
     </>

@@ -5,10 +5,7 @@ const Element = ({ children, titleClass, title }) => {
   const [elements, setElements] = useState([0]);
   const divElement = useRef();
 
-  console.log("elements======", elements);
-
   const handleDelete = (id) => {
-    console.log("id", id);
     setElements((prevElements) =>
       prevElements.filter((elementId) => elementId !== id)
     );
@@ -18,6 +15,7 @@ const Element = ({ children, titleClass, title }) => {
     const newId = elements.length;
     setElements((prevElements) => [...prevElements, newId]);
   };
+
   return (
     <div>
       {elements.map((element) => (
@@ -27,7 +25,6 @@ const Element = ({ children, titleClass, title }) => {
             contentEditable={true}
             suppressContentEditableWarning={true}
             ref={divElement}
-            draggable
           >
             <div className="absolute inset-0 hidden border-2 border-blue-600 group-focus-within:block">
               <div className="absolute -translate-y-full pl-2">

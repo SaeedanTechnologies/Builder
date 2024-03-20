@@ -1,23 +1,10 @@
-import { Element, ListItem } from "@/components";
+import { Droppable, Element, ListItem } from "@/components";
 
 const Content = () => {
-  const handleOnDrop = (e) => {
-    e.dataTransfer.getData("widgetType");
-  };
-
-  const handleDragOver = (e) => {
-    e.preventDefault();
-    console.log("Drag over");
-  };
-
   return (
     <main className="flex-1  h-screen overflow-y-scroll pb-20">
       <div className=" bg-white">
-        <section
-          className="py-10 px-12"
-          onDrop={handleOnDrop}
-          onDragOver={handleDragOver}
-        >
+        <section className="flex flex-col py-10 px-12">
           <Element titleClass={""} title={"H1-hero title"}>
             <h1 className="max-w-3xl text-5xl font-bold leading-[1.4] outline-none">
               We create digital products for business and user goals.
@@ -49,6 +36,8 @@ const Content = () => {
               </ListItem>
             </ul>
           </Element>
+
+          <Droppable />
         </section>
       </div>
     </main>
