@@ -5,5 +5,7 @@ export { default as ListItem } from "./ui/ListItem";
 export { default as Droppable } from "./ui/Droppable";
 export { default as Draggable } from "./ui/Draggable";
 export { default as DragOverlayWrapper } from "./ui/DragOverlayWrapper";
+export { default as DesignerSideBar } from "./ui/DesignerSideBar";
 export * from "./ui/Elements/TextElement";
+export * from "./ui/BlockElements";
 export * from "./ui/Elements/Button";

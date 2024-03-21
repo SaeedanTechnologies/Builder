@@ -2,8 +2,12 @@ import { IconBxsChevronLeft, IconEye } from "@/icons";
 import { DndContext } from "@dnd-kit/core";
 import RightMenu from "./RightMenu";
 import Content from "./Content";
-import BlockElements from "./BlockElements";
-import { DragOverlayWrapper } from "@/components";
+// import BlockElements from "./BlockElements";
+import {
+  DragOverlayWrapper,
+  DesignerSideBar,
+  BlockElements,
+} from "@/components";
 
 const Navbar = () => {
   return (
@@ -22,6 +26,7 @@ const Navbar = () => {
         <DndContext>
           <div className="flex">
             {/* <BlockElements /> */}
+            <DesignerSideBar />
             <Content />
           </div>
           <DragOverlayWrapper />

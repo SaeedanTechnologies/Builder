@@ -18,6 +18,18 @@ import { useDraggable } from "@dnd-kit/core";
 // };
 
 export const TextElement = {
+  // id,
+  // type,
+  extraAttributes: {
+    label: "Title Text",
+    helperText: "Helper Text",
+    required: false,
+    placeholder: "Value here...",
+  },
+  designerBtnElement: {
+    icon: IconRectangleHorizontal,
+    label: "Title Text",
+  },
   designerComponent: () => <div>Designer Component</div>,
   blockComponent: () => <div>Block Component</div>,
   propertiesComponent: () => <div>Properties Component</div>,
